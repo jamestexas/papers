@@ -14,7 +14,7 @@ Biologically-inspired memory management system for LLMs with contextual fabric a
 
 ### BREAD: Bundles, Relations, Embeddings, And Dimensions
 
-[Paper](./bread/bread_paper.pdf) | [Code](./bread/)
+[Paper](./bread/paper.pdf) | [Code](./bread/bread_minimal.py)
 
 Hyperbolic embeddings and fiber bundle architecture for hierarchical knowledge representation. Includes:
 - Emergent Stratification patterns
