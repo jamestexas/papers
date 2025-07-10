@@ -6,12 +6,14 @@ Research papers and implementations on AI memory systems and information geometr
 ## Contents
 
 ### CHEESE: Contextual Hierarchy for Embedding Enhancement and Semantic Enrichment
+
 [Paper](./cheese/cheese_paper.pdf) | [Code](./cheese/)
 
 Biologically-inspired memory management system for LLMs with contextual fabric approach.
 
 
 ### BREAD: Bundles, Relations, Embeddings, And Dimensions
+
 [Paper](./bread/bread_paper.pdf) | [Code](./bread/)
 
 Hyperbolic embeddings and fiber bundle architecture for hierarchical knowledge representation. Includes:
@@ -19,6 +21,7 @@ Hyperbolic embeddings and fiber bundle architecture for hierarchical knowledge r
 - SLICE/LOAF measurement framework
 
 ### SMoGE: Structured Multi-Geometric Expertise
+
 [Paper](./smoge/smoge_paper.pdf) | [Code](./smoge/)
 
 Multi-geometric representation system using Euclidean, hyperbolic, and tropical geometries simultaneously.
