@@ -16,9 +16,12 @@ Biologically-inspired memory management system for LLMs with contextual fabric a
 
 [Paper](./bread/paper.pdf) | [Code](./bread/bread_minimal.py)
 
-Hyperbolic embeddings and fiber bundle architecture for hierarchical knowledge representation. Includes:
+Hyperbolic embeddings and fiber bundle architecture for hierarchical knowledge representation.
+<!---
+Includes:
 - Emergent Stratification patterns
 - SLICE/LOAF measurement framework
+-->
 
 ### SMoGE: Structured Multi-Geometric Expertise
 
