@@ -7,7 +7,7 @@ Research papers and implementations on AI memory systems and information geometr
 
 ### CHEESE: Contextual Hierarchy for Embedding Enhancement and Semantic Enrichment
 
-[Paper](./cheese/cheese_paper.pdf) | [Code](./cheese/)
+[Paper](./cheese/paper.pdf) | [Code](./cheese/cheese_minimal.py)
 
 Biologically-inspired memory management system for LLMs with contextual fabric approach.
 
