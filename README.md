@@ -7,14 +7,14 @@ Research papers and implementations on AI memory systems and information geometr
 
 ### CHEESE: Contextual Hierarchy for Embedding Enhancement and Semantic Enrichment
 
-[Paper](./cheese/paper.pdf) | [Code](./cheese/cheese_minimal.py)
+[Paper](./cheese/paper.md) | [Code](./cheese/cheese_minimal.py)
 
 Biologically-inspired memory management system for LLMs with contextual fabric approach.
 
 
 ### BREAD: Bundles, Relations, Embeddings, And Dimensions
 
-[Paper](./bread/paper.pdf) | [Code](./bread/bread_minimal.py)
+[Paper](./bread/paper.md) | [Code](./bread/bread_minimal.py)
 
 Hyperbolic embeddings and fiber bundle architecture for hierarchical knowledge representation.
 <!---
