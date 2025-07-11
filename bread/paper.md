@@ -2,7 +2,7 @@
 
 **James Gardner**  
 _Independent Researcher_  
-_[jamesgardner92@gmail.com](mailto:jamesgardner92@gmail.com)_
+_[jamestexasgardner@gmail.com](mailto:jamestexasgardner@gmail.com)_
 
 ## Abstract
 
