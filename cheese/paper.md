@@ -2,6 +2,7 @@
 
 **Author:** James Gardner  
 **Affiliation:** Personal Research
+
 **Contact:** _[jamestexasgardner@gmail.com](mailto:jamestexasgardner@gmail.com)_
 
 ## Abstract
