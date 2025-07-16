@@ -19,6 +19,23 @@
 
 ---
 
+## License
+
+**IMPORTANT**: This repository uses multiple licenses. See [LICENSE](LICENSE) for details.
+
+- **Papers/Documentation**: [LICENSE_PAPERS](LICENSE_PAPERS) - CC BY-NC-SA 4.0 (no commercial use, share-alike)
+- **Code**: [LICENSE_CODE](LICENSE_CODE) - Apache 2.0 with Non-Commercial rider
+- **helices/ folder**: CC BY 4.0 (as published on Zenodo)
+
+### Patent Notice
+No patent license—express or implied—is granted by distribution of this repository. 
+Some concepts are covered by U.S. provisional patent applications filed in 2024–2025. 
+Any commercial use requires a separate patent license.
+
+For commercial licensing inquiries: jamestexasgardner@gmail.com
+
+---
+
 ## Contributing / Feedback
 
 I'm a self‑taught software engineer using AI‑assisted tooling plus manual proofs.  

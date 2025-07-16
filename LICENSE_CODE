@@ -1,0 +1,45 @@
+SPDX-Version: SPDX-2.2
+SPDX-License-Identifier: LicenseRef-Apache-2.0-NC
+
+LICENSE_CODE v1.0 — 2025-07-16
+
+Apache License Version 2.0 with Additional Non-Commercial Condition
+
+This license applies to all code files in this repository (except the helices/ directory).
+
+Copyright (c) 2025 James Gardner
+
+Patent Notice
+-------------
+No patent license—express or implied—is granted by distribution of this repository. 
+Some concepts are covered by U.S. provisional patent applications filed in 2024–2025. 
+Any commercial use requires a separate patent license from James Gardner.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+### Additional Non-Commercial Condition
+
+Redistribution or use in connection with any product or service offered for 
+commercial advantage or for the benefit of a commercial entity is prohibited 
+without explicit written permission from James Gardner. This includes but is 
+not limited to:
+
+- Use by or for commercial entities for internal research or development
+- Integration into commercial products or services
+- Use in any revenue-generating activity
+- Forks that start non-commercial but later monetize must obtain a license first
+
+Academic research, personal study, and non-commercial open source projects are 
+permitted. Open-source projects must preserve this non-commercial rider in any fork.
+
+For commercial licensing inquiries: jamestexasgardner@gmail.com

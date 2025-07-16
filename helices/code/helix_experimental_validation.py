@@ -1,3 +1,7 @@
+# SPDX-License-Identifier: CC-BY-4.0
+# Copyright (c) 2025 James Gardner
+# Part of: Hyperbolic Helices (DOI: 10.5281/zenodo.15983944)
+
 """
 Experimental Validation: Proving Counting Creates Helical Trajectories
 This moves from theory to empirical proof by directly measuring trajectories

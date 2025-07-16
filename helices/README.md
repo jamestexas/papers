@@ -1,6 +1,6 @@
 # Hyperbolic Helices: Why Transformers Can't Count
 
-> **Published:** January 2025  
+> **Published:** July 2025  
 > **DOI:** [10.5281/zenodo.15983944](https://zenodo.org/records/15983944)  
 > **Status:** ✅ Published on Zenodo
 
@@ -18,12 +18,22 @@ We discover that Large Language Models fail at counting because they must naviga
 
 ## Files
 
+### Paper and Theory
 - `hyperbolic_helices.md` - Full paper (markdown format)
 - `helix_mathematics_complete.md` - Complete mathematical derivations
-- `helix_experimental_validation.py` - Empirical validation code
-- `parameter_sweep_visualization.py` - Figure generation script
-- `helix_trajectory_proof.png` - Visualization of helical trajectory
-- `parameter_sweep_analysis.png` - Parameter scaling analysis
+
+### Core Implementation
+- `./code/prove_hyperbolic_geometry.py` - Proof of 100% triangle inequality violations (50k samples)
+- `prototype_implementation.py` - Pedagogical implementation matching Appendix A
+- `PRODUCTION_NOTES.md` - Guidance for production deployment
+
+### Experimental Validation
+- `./code/helix_experimental_validation.py` - Full empirical validation of helical trajectories
+- `./code/parameter_sweep_visualization.py` - Generate parameter scaling figures
+
+### Figures
+- [`helix_trajectory_proof.png`](./code/helix_trajectory_proof.png) - Visualization of helical trajectory
+- [`parameter_sweep_analysis.png`](./code/parameter_sweep_analysis.png) - Parameter scaling analysis
 
 ## Citation
 
@@ -76,6 +86,25 @@ In hyperbolic space, these constraints create an exponentially longer path than 
 **Author**: James Gardner  
 **Email**: jamestexasgardner@gmail.com  
 **Twitter/X**: [@jamestexas](https://twitter.com/jamestexas)
+
+## PDF Generation
+
+To generate a clean PDF version of the paper:
+
+```bash
+# Install required LaTeX packages (one-time setup)
+sudo tlmgr install newunicodechar collection-fontsrecommended collection-latexextra
+
+# Generate PDF with proper formatting
+pandoc hyperbolic_helices.md -o preprint.pdf \
+  --pdf-engine=xelatex \
+  -V geometry:margin=1in \
+  -V fontsize=11pt \
+  --no-highlight \
+  --include-in-header=header.tex
+```
+
+**Note**: The `--no-highlight` flag ensures code blocks render as clean monospace text without syntax highlighting colors. The `header.tex` file handles Unicode mathematical symbols and code formatting.
 
 ## License
 

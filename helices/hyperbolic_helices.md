@@ -1,13 +1,12 @@
 # Hyperbolic Helices Reveal Why Transformers Can't Count: Geometric Patterns of Semantic Uncertainty
 
-> **Draft v0.9 – July 2025.** Feedback welcome. This manuscript has not yet been peer-reviewed; please cite with caution.
-> **Preprint DOI**: [10.5281/zenodo.15983944](https://doi.org/10.5281/zenodo.15983944)  
+> **Preprint v1.0 – January 2025** | Not yet peer-reviewed  
+> **DOI**: [10.5281/zenodo.15983944](https://doi.org/10.5281/zenodo.15983944)  
 > **Code**: [github.com/jamestexas/papers](https://github.com/jamestexas/papers)
 
 **Author**: James Gardner  
 **Affiliation**: Independent Researcher  
 **Email**: <jamestexasgardner@gmail.com>
-**GitHub**: github.com/jamestexas/papers
 
 ## Abstract
 
@@ -73,10 +72,16 @@ We formulate counting as a constrained optimization problem in hyperbolic space.
 ### 3.4 Adiabatic Helix Solution
 
 Through variational analysis, we prove the optimal trajectory is an adiabatic helix:
-$$\rho(t) = r_{min} + \epsilon(1 - \cos(\nu t)), \quad \theta(t) = \omega t, \quad z(t) = vt$$
+
+$$
+\rho(t) = r_{min} + \epsilon(1 - \cos(\nu t)), \quad \theta(t) = \omega t, \quad z(t) = vt
+$$
 
 This yields the deviation formula:
-$$\boxed{\mathcal{D} = \frac{2\pi N\sinh(r_{min})}{vT}}$$
+
+$$
+\boxed{\mathcal{D} = \frac{2\pi N\sinh(r_{min})}{vT}}
+$$
 
 ## 4. Semantic Uncertainty Through Trajectories
 
@@ -84,20 +89,24 @@ $$\boxed{\mathcal{D} = \frac{2\pi N\sinh(r_{min})}{vT}}$$
 
 **Definition**: Semantic uncertainty is the difficulty a model experiences navigating between concepts in hyperbolic embedding space, independent of output correctness.
 
-Given text sequence $T = \{t_1, ..., t_n\}$ with embeddings $\phi(t_i) \in \mathbb{H}^d$ (hyperbolic space), we analyze trajectory geometry.
+Given text sequence:
+$$
+T = \{t_1, ..., t_n\}
+$$
+With embeddings: $\phi(t_i) \in \mathbb{H}^d$ (hyperbolic space), we analyze trajectory geometry.
 
 ### 4.2 Uncertainty Metrics
 
 **Path Roughness** (navigation difficulty):
-$$R = \sum_{i=1}^{n-2} d_\mathbb{H}(i, i+2) - d_\mathbb{H}(i, i+1) - d_\mathbb{H}(i+1, i+2)$$
+$$R = \sum_{i=1}^{n-2} \big[ d_{\mathbb{H}}(i, i+2) - d_{\mathbb{H}}(i, i+1) - d_{\mathbb{H}}(i+1, i+2) \big]$$
 
-where $d_\mathbb{H}$ is hyperbolic distance. High roughness indicates the model cannot find smooth geodesics.
+where $d_{\mathbb{H}}$ is hyperbolic distance. High roughness indicates the model cannot find smooth geodesics.
 
 **Oscillation Score** (interpretive uncertainty):
 $$O = \frac{\text{direction changes}}{n-2}$$
 
 **Jump Score** (bridging uncertainty):
-$$J = \frac{\max(d_\mathbb{H}(i, i+1))}{\text{mean}(d_\mathbb{H}(i, i+1))}$$
+$$J = \frac{\max(d_{\mathbb{H}}(i, i+1))}{\text{mean}(d_{\mathbb{H}}(i, i+1))}$$
 
 **Magnitude Variance** (confidence fluctuation):
 $$V = \text{Var}(||\phi(t_i)||)$$
@@ -121,7 +130,7 @@ Analyzing "How many r's are in strawberry?" reveals:
 - Pattern: Perfect helical trajectory
 - Oscillation: 0.5 (exact alternation)
 
-![Helical trajectory for counting task showing 3D spiral pattern, angular progression, and radius constancy](img/helix_trajectory_proof.png)
+![Helical trajectory for counting task showing 3D spiral pattern, angular progression, and radius constancy](./helix_trajectory_proof.png)
 
 *Figure 2: Empirical validation of helical trajectory. Top left: 3D helical pattern. Top right: circular projection. Bottom: linear angular progression (R²>0.8) and constant radius with adiabatic oscillations.*
 
@@ -130,7 +139,7 @@ Analyzing "How many r's are in strawberry?" reveals:
 The helical pattern emerges from minimizing path length in hyperbolic space under counting constraints. With N=10, r_min=8, and vT=N:
 $$\mathcal{D} = 2\pi \times \sinh(8) \approx 9,365$$
 
-![Parameter sweep showing exponential scaling of deviation with context radius. The 10,000× deviation occurs at r_min=8.](img/parameter_sweep_analysis.png)
+![Parameter sweep showing exponential scaling of deviation with context radius. The 10,000× deviation occurs at r_min=8.](./parameter_sweep_analysis.png)
 
 *Figure 1: Exponential scaling of path deviation with hyperbolic radius r_min. Different curves show scaling for N=5,10,20,50 items.*
 
@@ -147,13 +156,11 @@ The exponential growth with context distance r_min explains transformer limitati
 ### 6.1 Setup
 
 **Datasets**:
-
 - TruthfulQA (complex semantic navigation)
 - CLINC-150 OOS (out-of-scope detection)
 - Custom counting/reasoning tasks
 
 **Baselines**:
-
 - Maximum Softmax Probability (MSP)
 - Temperature scaling
 - Energy-based OOD detection
@@ -232,52 +239,45 @@ The complete orthogonality with confidence-based methods (0% overlap) confirms w
 
 [Sala et al., 2018] Frederic Sala et al. Representation Tradeoffs for Hyperbolic Embeddings. ICML 2018.
 
-## Appendix A: Implementation
+## Appendix A: Implementation (Simplified)
 
 ```python
-def measure_semantic_uncertainty(text):
-    """Core implementation of semantic uncertainty detection"""
+def measure_semantic_uncertainty(text: str) -> dict:
+    """
+    Pedagogical implementation of semantic uncertainty detection.
+    Production systems should use tokenizer-consistent segmentation.
     
-    # Extract trajectory through embedding space
-    embeddings = [encode(token) for token in text.split()]
+    Returns: {'uncertainty_score': float, 'pattern': str}
+    """
+    # Simplified trajectory extraction (word-level for clarity)
+    tokens = text.split()
+    embeddings = [model.encode(token) for token in tokens]
     
-    # Calculate hyperbolic distances
-    distances = []
-    for i in range(len(embeddings)-1):
-        d = hyperbolic_distance(embeddings[i], embeddings[i+1])
-        distances.append(d)
+    # Core hyperbolic distance (Poincaré ball)
+    def hyper_dist(x, y):
+        norm_x, norm_y = np.linalg.norm(x), np.linalg.norm(y)
+        norm_diff = np.linalg.norm(x - y)
+        denom = (1 - norm_x**2) * (1 - norm_y**2)
+        return np.arccosh(1 + 2*norm_diff**2 / (denom + 1e-10))
     
-    # Calculate uncertainty metrics
-    roughness = calculate_path_roughness(embeddings)
-    oscillation = calculate_oscillation(embeddings)
-    jumps = calculate_jump_score(embeddings)
+    # Calculate trajectory metrics
+    roughness = compute_path_roughness(embeddings, hyper_dist)
+    oscillation = compute_oscillation(embeddings)
     
-    # Identify uncertainty pattern
-    if oscillation > 0.7 and np.std(distances) > 10:
-        pattern = "iterative_uncertainty"
-    elif roughness > threshold:
-        pattern = "conceptual_uncertainty"
-    elif jumps > threshold:
-        pattern = "bridging_uncertainty"
+    # Pattern detection (thresholds tuned empirically)
+    if oscillation > 0.7:
+        pattern = "iterative"  # Helical trajectory
+    elif roughness > 0.5:
+        pattern = "conceptual"  # Complex navigation
     else:
-        pattern = "low_uncertainty"
+        pattern = "stable"     # Normal flow
     
-    return {
-        'uncertainty_score': combine_metrics(roughness, oscillation, jumps),
-        'pattern': pattern,
-        'explanation': explain_pattern(pattern)
-    }
-
-def hyperbolic_distance(x, y, c=1.0):
-    """Poincaré ball distance"""
-    norm_x = np.linalg.norm(x)
-    norm_y = np.linalg.norm(y)
-    norm_diff = np.linalg.norm(x - y)
-    
-    denom = (1 - norm_x**2) * (1 - norm_y**2)
-    arg = 1 + 2 * norm_diff**2 / denom
-    return np.arccosh(max(1, arg))
+    return {'uncertainty_score': roughness + oscillation, 
+            'pattern': pattern}
 ```
+
+*For production deployment (tokenization, batching, GPU optimization), see:*
+*[github.com/jamestexas/papers/helices/PRODUCTION_NOTES.md](https://github.com/jamestexas/papers/tree/main/helices)*
 
 ## Appendix B: Statistical Significance
 
@@ -294,6 +294,4 @@ See accompanying supplementary material for:
 
 ---
 
-*UNPUBLISHED PREPRINT. Shared for community review. © 2025 James Gardner. All rights reserved.*
-
-### Code and supplementary materials will be made available at: [github.com/jamestexas/papers](https://github.com/jamestexas/papers)
+### Code and supplementary materials: [github.com/jamestexas/papers](https://github.com/jamestexas/papers)

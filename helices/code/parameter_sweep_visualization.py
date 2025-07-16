@@ -1,3 +1,7 @@
+# SPDX-License-Identifier: CC-BY-4.0
+# Copyright (c) 2025 James Gardner
+# Part of: Hyperbolic Helices (DOI: 10.5281/zenodo.15983944)
+
 """
 Parameter sweep visualization showing how deviation D scales with r_min
 Addresses reviewer feedback about demonstrating the exponential scaling
