@@ -1,66 +1,41 @@
-# Papers
+# 🧠 Geometry‑Driven AI Memory (Working Papers)
 
-## ⚠️ THIS REPO IS UNDER CONSTRUCTION AND A WORK IN PROGRESS ⚠️
-Research papers and implementations on AI memory systems and information geometry.
+> Independent research on AI memory systems, information geometry, and the physical properties of semantic data.  
+> **Status:** 🚧 Work‑in‑progress – looking for collaborators and friendly reviewers, especially on the math derivations.
 
-## Contents
+---
 
-### CHEESE: Contextual Hierarchy for Embedding Enhancement and Semantic Enrichment
+## Table of Contents
 
-[Paper](./cheese/paper.md) | [Code](./cheese/cheese_minimal.py)
+| Project | Paper | Code | Blog | Status |
+|---------|-------|------|------|--------|
+| **CHEESE** <br> Contextual Hierarchy for Embedding Enhancement & Semantic Enrichment | [cheese/paper.md](cheese/paper.md) | [cheese/cheese_minimal.py](cheese/cheese_minimal.py) | [Medium](https://jamestexas.medium.com/i-asked-ai-for-a-million-dollar-idea-it-gave-me-its-biggest-problem-memory-59b80f7c031b) | 📝 Draft (unpublished) |
+| **BREAD** <br> Bundles, Relations, Embeddings, And Dimensions | [bread/paper.md](bread/paper.md) | [bread/bread_minimal.py](bread/bread_minimal.py) | [Medium](https://jamestexas.medium.com/bread-when-your-memory-system-needs-a-phd-in-mathematics-11ddc5ad4a32) | 📝 Draft (unpublished) |
+| **SMoGE** <br> Structured Multi‑Geometric Expertise | _Available on request_ | _Available on request_ | - | 📝 Draft (private) |
+| **L‑Shape** <br> Lossless Hierarchical Representation | _Available on request_ | _Available on request_ | - | 📝 Draft (private) |
+| **Thermodynamic Analysis of Semantic Information** | _Coming soon_ | _Coming soon_ | - | 📝 Draft (private) |
+| **Physical Properties of Semantic Information** | _Coming soon_ | _Coming soon_ | - | 📝 Draft (private) |
+| **Hyperbolic Helices** <br> Why Transformers Can't Count: Geometric Patterns of Semantic Uncertainty | [DOI: 10.5281/zenodo.15983944](https://zenodo.org/records/15983944) | [helices/](helices/) | - | ✅ Published |
 
-Biologically-inspired memory management system for LLMs with contextual fabric approach.
+---
 
+## Contributing / Feedback
 
-### BREAD: Bundles, Relations, Embeddings, And Dimensions
+I'm a self‑taught software engineer using AI‑assisted tooling plus manual proofs.  
+If you're comfortable with differential geometry, hyperbolic embeddings, or LLM memory,
+I'd love a sanity check or collaboration. Open an issue or email me (address in
+`author:` field of the papers).
 
-[Paper](./bread/paper.md) | [Code](./bread/bread_minimal.py)
-
-Hyperbolic embeddings and fiber bundle architecture for hierarchical knowledge representation.
-<!---
-Includes:
-- Emergent Stratification patterns
-- SLICE/LOAF measurement framework
--->
-
-### SMoGE: Structured Multi-Geometric Expertise
-
-[Paper](./smoge/smoge_paper.pdf) | [Code](./smoge/)
-
-Multi-geometric representation system using Euclidean, hyperbolic, and tropical geometries simultaneously.
-
-### L-Shape: Lossless Hierarchical Representation using harmonic packing principles
-[Paper](./lshape/lshape_paper.pdf) | [Code](./lshape/)
-
-Compression technique that improves semantic relationships through geometric separation.
-
-### Thermodynamic Analysis of Semantic Information (patent pending)
-<!---
-[Paper](./thermodynamics/thermodynamics_paper.pdf) | [Code](./thermodynamics/)
--->
-Discovery that semantic information exhibits measurable thermodynamic properties including "mass", entropy, and phase states (gas/liquid/solid). Demonstrates positive correlation between CPU processing time and semantic entropy, enabling computational cost prediction and phase-aware processing.
-
-### Physical Properties of Semantic Information (patent pending)
-<!---
-[Paper](./physical_properties/physical_properties_paper.pdf) | [Code](./physical_properties/)
--->
-Method for measuring intrinsic physical properties of semantic information in language models. Identifies measurable forces and curvature in embedding spaces that explain computational phenomena and enable prediction of processing failures before they occur.
+---
 
 ## Citation
 
-If you use this work, please cite:
-```
-@misc{gardner2025papers,
-  author = {Gardner, James},
-  title = {Papers: AI Memory Systems and Information Geometry},
-  year = {2025},
-  publisher = {GitHub},
-  url = {https://github.com/jamestexas/papers}
+```bibtex
+@misc{gardner2025geomemory,
+  author    = {James Gardner},
+  title     = {Geometry-Driven AI Memory Systems},
+  year      = {2025},
+  howpublished = {GitHub},
+  url       = {https://github.com/jamestexas/papers}
 }
 ```
-
-## License
-
-Papers in this repository are licensed under [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-
-Code is licensed under [Apache License 2.0](LICENSE).
