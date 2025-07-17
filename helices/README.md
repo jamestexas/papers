@@ -24,7 +24,7 @@ We discover that Large Language Models fail at counting because they must naviga
 
 ### Core Implementation
 - `./code/prove_hyperbolic_geometry.py` - Proof of 100% triangle inequality violations (50k samples)
-- `prototype_implementation.py` - Pedagogical implementation matching Appendix A
+- `./code/prototype_implementation.py` - Pedagogical implementation matching Appendix A
 - `PRODUCTION_NOTES.md` - Guidance for production deployment
 
 ### Experimental Validation
