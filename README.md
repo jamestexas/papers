@@ -29,16 +29,14 @@
 
 ### Patent Notice
 No patent license—express or implied—is granted by distribution of this repository. 
-Some concepts are covered by U.S. provisional patent applications filed in 2024–2025. 
+Some concepts are covered by U.S. provisional patent applications filed in 2025. 
 Any commercial use requires a separate patent license.
-
-For commercial licensing inquiries: jamestexasgardner@gmail.com
 
 ---
 
 ## Contributing / Feedback
 
-I'm a self‑taught software engineer using AI‑assisted tooling plus manual proofs.  
+I'm a self‑taught software engineer using AI‑assisted tooling orchestrated and validated by myself, to the best of my ability.  
 If you're comfortable with differential geometry, hyperbolic embeddings, or LLM memory,
 I'd love a sanity check or collaboration. Open an issue or email me (address in
 `author:` field of the papers).
