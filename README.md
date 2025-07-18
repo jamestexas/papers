@@ -9,7 +9,7 @@
 
 | Project | Paper | Code | Blog | Status |
 |---------|-------|------|------|--------|
-| **CHEESE** <br> Contextual Hierarchy for Embedding Enhancement & Semantic Enrichment | [cheese/paper.md](cheese/paper.md) | [cheese/cheese_minimal.py](cheese/cheese_minimal.py) | [Medium](https://jamestexas.medium.com/i-asked-ai-for-a-million-dollar-idea-it-gave-me-its-biggest-problem-memory-59b80f7c031b) | 📝 Draft (unpublished) |
+| **CHEESE** <br> Contextual Hierarchy for Embedding Enhancement & Semantic Enrichment | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16064463.svg)](https://doi.org/10.5281/zenodo.16064463) | [cheese/cheese_minimal.py](cheese/cheese_minimal.py) | [Medium](https://jamestexas.medium.com/i-asked-ai-for-a-million-dollar-idea-it-gave-me-its-biggest-problem-memory-59b80f7c031b) | 📝 Draft (unpublished) |
 | **BREAD** <br> Bundles, Relations, Embeddings, And Dimensions | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16063916.svg)](https://doi.org/10.5281/zenodo.16063916) | [bread/bread_minimal.py](bread/bread_minimal.py) | [Medium](https://jamestexas.medium.com/bread-when-your-memory-system-needs-a-phd-in-mathematics-11ddc5ad4a32) | 📝 Draft (unpublished) |
 | **SMoGE** <br> Structured Multi‑Geometric Expertise | _Available on request_ | _Available on request_ | - | 📝 Draft (private) |
 | **L‑Shape** <br> Lossless Hierarchical Representation | _Available on request_ | _Available on request_ | - | 📝 Draft (private) |
